@@ -10,14 +10,14 @@ margin: 1% 0;
 div {
     margin: 3%auto;
     img {
-        max-width:100%fit-content;
-        max-height:100%fit-content;
+        max-width:100%;
+        max-height:100%;
     }
 }
 `
 class Follower extends React.Component{
     componentDidMount(){
-        console.log(`Follower ${this.props.follow.login} Mounts`)
+        console.log(`Follower ${this.props.follower.login} Mounts`)
     }
 
     render() {

@@ -41,35 +41,35 @@ class App extends React.Component {
       .catch(err =>{
         console.error(err)
       })
-      .finally(
-        this.setState({
-          ...this.state,
-          input: ''
-        })
-      )
+      // .finally(
+      //   this.setState({
+      //     ...this.state,
+      //     input: ''
+      //   })
+      // )
     }
   }
   
-  handleChange = (e) => {
-    this.setState({
-      ...this.state,
-      input: e.target.value
-    });
-  }
+  // handleChange = (e) => {
+  //   this.setState({
+  //     ...this.state,
+  //     input: e.target.value
+  //   });
+  // }
 
-  handleClick = (e) =>{
-    e.preventDefault()
-    axios.get(`https://api.github.com/users/${this.state.input}`)
-      .then( res => {
-        this.setState({
-          ...this.state,
-          user: res.data
-        })
-      })
-      .catch(err =>{
-        console.error(err)
-      })
-  }
+  // handleClick = (e) =>{
+  //   e.preventDefault()
+  //   axios.get(`https://api.github.com/users/${this.state.input}`)
+  //     .then( res => {
+  //       this.setState({
+  //         ...this.state,
+  //         user: res.data
+  //       })
+  //     })
+  //     .catch(err =>{
+  //       console.error(err)
+  //     })
+  // }
 
   render() {
     return(
